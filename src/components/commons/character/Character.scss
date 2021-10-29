@@ -1,0 +1,73 @@
+.Character {
+    margin-top: 7px;
+    margin-bottom: 7px;
+
+    .content {
+        height: 100%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        box-shadow: 1px 7px 6px 0px rgba(0,0,0,0.75);
+        background-color: white; 
+        -webkit-box-shadow: 1px 7px 6px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 1px 7px 6px 0px rgba(0,0,0,0.75);
+
+        .header {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            padding: 10px;
+            transition: .5s ease;
+            -webkit-transition: .5s ease;
+            -moz-transition: .5s ease;
+            -ms-transition: .5s ease;
+            -o-transition: .5s ease;
+
+            &:hover {
+                padding: 0px;
+            }
+    
+            img {
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+            }
+        }
+    
+        .body {
+            padding: 0 10px 10px 10px;
+    
+            .info {
+                color: rgb(139, 139, 139);
+            }
+
+            .data {
+                margin-left: 10px;
+            }
+
+            .name {
+                text-align: center;
+                
+                span {
+                    font-size: 22px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        &.Alive {
+
+            .name {
+                span {
+                    border-bottom: 4px solid #7db749;
+                }
+            }
+        }
+
+        &.Dead {
+            .name {
+                span {
+                    border-bottom: 4px solid red;
+                }
+            }
+        } 
+    }
+}

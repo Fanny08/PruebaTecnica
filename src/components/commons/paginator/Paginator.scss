@@ -1,0 +1,21 @@
+$color: #528635;
+
+.Paginator {
+    .page-item {
+        .page-link {
+            color: $color;
+
+            &:focus {
+                box-shadow: 0 0 0 0.1rem #68b241;      
+            }
+        }
+
+        &.active {
+            .page-link {
+                background-color: $color;
+                color: white;
+                border-color: $color;
+            }
+        }
+    }
+}
